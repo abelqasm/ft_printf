@@ -19,7 +19,7 @@ all : $(NAME)
 $(NAME) : $(OBJS)
 	${CC} $(SRCS) 
 	ar -rc $(NAME) $(OBJS)
-
+	rm -rf *.o
 clean :
 	rm -rf *.o
 
